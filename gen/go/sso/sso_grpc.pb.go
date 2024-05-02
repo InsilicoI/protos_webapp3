@@ -27,6 +27,7 @@ type AuthClient interface {
 	IsAdmin(ctx context.Context, in *IsAdminRequest, opts ...grpc.CallOption) (*IsAdminResponse, error)
 }
 
+
 type authClient struct {
 	cc grpc.ClientConnInterface
 }
